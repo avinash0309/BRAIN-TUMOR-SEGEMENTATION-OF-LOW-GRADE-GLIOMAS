@@ -7,6 +7,9 @@
 # MODEL ARCHITECTURE
 Implemented Three models "U-net", "MultiRes Unet" and a model porosped named it as "Proposed Unet Model" and their respective architectures can be found below.
 
+# U-NET
+![U-NET](Unet_model.png)
+
 
 
 
