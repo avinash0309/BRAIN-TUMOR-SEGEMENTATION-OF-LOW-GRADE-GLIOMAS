@@ -16,6 +16,8 @@ Implemented Three models "U-net", "MultiRes Unet" and a model porosped named it 
 # PROPOSED U-NET
 ![MULTIRES U-NET](ModelArchitectures/Proposed_model.png)
 
+# METRICS AND LOSS PLOTS
+# TRAIN DICE SCORE
 
 
 
