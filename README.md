@@ -4,6 +4,15 @@
 2. Recent studies have discovered that low grade giolmas are associated with the genomic subtypes that have a particular feature shape and by analyzing the feature shape we can predict which genomic subtype that was responsible for the development of the brain tumor. 
 3. The conventional way to findout the genomic subtype is by making a biopsy which involves making and incision into the skull and collecting the tissue from the tumor site which involves a huge amount of risk factors.For more details we encougare you to read the referenced paper below.
 
+# MODEL ARCHITECTURE
+Implemented Three models "U-net", "MultiRes Unet" and a model porosped named it as "Proposed Unet Model" and their respective architectures can be found below.
+
+
+
+
+
+
+
 
 # REFERENCES
 1. Paper1: https://arxiv.org/pdf/1902.04049.pdf
@@ -13,8 +22,3 @@
 5. Dice Coefficient: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1415224/figure/F1/
 6. Author Github Link: https://github.com/MaciejMazurowski/brain-segmentation
 7. Dataset: https://www.kaggle.com/mateuszbuda/lgg-mri-segmentation
-
-
-
-we have implemented Three models "U-net", "MultiRes Unet" and a model porosped by us that we have named it as "Proposed Unet Model" and their  respective architectures can be found below.
-
