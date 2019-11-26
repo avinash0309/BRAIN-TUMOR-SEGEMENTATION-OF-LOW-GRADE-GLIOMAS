@@ -11,8 +11,10 @@
 3. Image pre-preocessing: https://keras.io/preprocessing/image/
 4. Data Augmentation: https://fairyonice.github.io/Learn-about-ImageDataGenerator.html
 5. Dice Coefficient: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1415224/figure/F1/
-6. Author Github Link:https://github.com/MaciejMazurowski/brain-segmentation
+6. Author Github Link: https://github.com/MaciejMazurowski/brain-segmentation
+7. Dataset: https://www.kaggle.com/mateuszbuda/lgg-mri-segmentation
 
 
 
-we have implemented Three models "U-net", "MultiRes Unet" and a model porosped by us that we have named it as "Proposed Unet Model".
+we have implemented Three models "U-net", "MultiRes Unet" and a model porosped by us that we have named it as "Proposed Unet Model" and their  respective architectures can be found below.
+
