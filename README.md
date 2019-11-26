@@ -18,6 +18,7 @@ Implemented Three models "U-net", "MultiRes Unet" and a model porosped named it 
 
 # METRICS AND LOSS PLOTS
 # TRAIN DICE SCORE
+![TRAIN DICE SCORE](Results/Plots/TRAIN_Dice_score.png)
 
 
 
