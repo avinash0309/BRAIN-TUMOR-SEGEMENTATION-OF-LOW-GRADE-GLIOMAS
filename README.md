@@ -26,6 +26,9 @@ Implemented Three models "U-net", "MultiRes Unet" and a model porosped named it 
 # TRAIN LOSS
 ![TRAIN LOSS](Results/Plots/TRAINLOSS.png)
 
+# VALIDATION LOSS
+![VALIDATION LOSS](Results/Plots/VALLOSS.png)
+
 
 
 
