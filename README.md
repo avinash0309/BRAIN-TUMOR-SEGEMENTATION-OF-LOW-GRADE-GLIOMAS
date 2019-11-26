@@ -1,4 +1,4 @@
-# BRAIN-TUMOR-SEGEMENTATION-LOW-GRADE-GLIOMAS-
+# BRAIN-TUMOR-SEGEMENTATION-LOW-GRADE-GLIOMAS
 
 1. The objective of this project is to develope and automatic Image segmentaion algorithm to detect the low grade brain turmors. 
 2. Recent studies have discovered that low grade giolmas are associated with the genomic subtypes that have a particular feature shape and by analyzing the feature shape we can predict which genomic subtype that was responsible for the development of the brain tumor. 
