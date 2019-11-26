@@ -23,7 +23,8 @@ Implemented Three models "U-net", "MultiRes Unet" and a model porosped named it 
 # VALIDATION DICE SCORE
 ![VALIDATION DICE SCORE](Results/Plots/VALIDATION_Dice_score.png)
 
-
+# TRAIN LOSS
+![TRAIN LOSS](Results/Plots/TRAINLOSS.png)
 
 
 
