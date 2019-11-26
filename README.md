@@ -10,6 +10,12 @@ Implemented Three models "U-net", "MultiRes Unet" and a model porosped named it 
 # U-NET
 ![U-NET](ModelArchitectures/Unet_model.png)
 
+# MULTIRES U-NET
+![MULTIRES U-NET](ModelArchitectures/Multires_unet.png)
+
+# PROPOSED U-NET
+![MULTIRES U-NET](ModelArchitectures/Proposed_model.png)
+
 
 
 
