@@ -30,8 +30,6 @@ Implemented Three models "U-net", "MultiRes Unet" and a model porosped named it 
 ![VALIDATION LOSS](Results/Plots/VALLOSS.png)
 
 
-
-
 # REFERENCES
 1. Paper1: https://arxiv.org/pdf/1902.04049.pdf
 2. Paper2: https://arxiv.org/pdf/1906.03720.pdf
