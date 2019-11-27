@@ -12,7 +12,10 @@
 Proposed a U-net model that gives a Better result compared to the Normal Unet and MultiRes Unet model.
 Our proposed model consists of a Dowsampling Path, Proposed Multires Upath and an Upsampling Path.
 
- Down Sampling Block: The architecture of the Downsampling block has been shown below
+ Down Sampling Block: The architecture of the Downsampling block consists of:
+ 
+ *. Conv_layer-->Batch Normalization--> Conv_layer-- Max pooling layer
+
                                       
                                      
 5.2. The Downsampling path consists of 4 Downsampling blocks and we encourange you to look at our model plot for more information.
