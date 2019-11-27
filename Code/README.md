@@ -9,7 +9,7 @@
 4. The Ipyhton notebook "multires_Unet_Train.ipnynb" explains the training of MultiRes-Unet model.
 
 5.1. The Ipyhton notebook "Proposed_unet_train.ipnynb" explains the training of Proposed Unet model.
-Proposed a U-net model that gives a Better result compared to the Normal Unet and MultiRes Unet model.
+We Propose a U-net model that gives a Better result compared to the Normal Unet and MultiRes Unet model.
 Our proposed model consists of a Dowsampling Path, Proposed Multires Upath and an Upsampling Path.
 
  Down Sampling Block: The architecture of the Downsampling block consists of:
