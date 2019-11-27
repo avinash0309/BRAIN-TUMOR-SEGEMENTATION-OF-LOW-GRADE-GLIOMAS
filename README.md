@@ -1,7 +1,7 @@
 # BRAIN TUMOR SEGEMENTATION OF LOW GRADE GLIOMAS
 
 Created by:
-[Naveen Balaraju](https://github.com/naveenbalaraju?tab=repositories) and [Avinash](https://github.com/avinash0309?tab=repositories)
+[Naveen Balaraju](https://github.com/naveenbalaraju?tab=repositories) and [Avinash Kammardi Sashiprakash](https://github.com/avinash0309?tab=repositories)
 
 1. The objective of this project is to develope and automatic Image segmentaion algorithm to detect the low grade brain turmors. 
 2. Recent studies have discovered that low grade gliomas are associated with the genomic subtypes that have a particular feature shape and by analyzing the feature shape we can predict which genomic subtype that was responsible for the development of the brain tumor. 
