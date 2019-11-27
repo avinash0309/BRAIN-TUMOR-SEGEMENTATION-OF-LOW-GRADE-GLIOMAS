@@ -12,28 +12,12 @@
 Proposed a U-net model that gives a Better result compared to the Normal Unet and MultiRes Unet model.
 Our proposed model consists of a Dowsampling Path, Proposed Multires Upath and an Upsampling Path.
 
-5.1.a Down Sampling Block: The architecture of the Downsampling block has been shown below
-                                        Conv_layer
-                                            |
-                                    Batch Normalization
-                                            |
-                                        Conv_layer
-                                            |
-                                     Max pooling layer
+ Down Sampling Block: The architecture of the Downsampling block has been shown below
+                                      
                                      
 5.2. The Downsampling path consists of 4 Downsampling blocks and we encourange you to look at our model plot for more information.
 Up Sampling Block:The architecture of the Upsampling block has been shown below
-                      Skip connection + Input from previous Conv_layer
-                                            |
-                                    Batch Normalization
-                                            |
-                                        Conv_layer
-                                            |
-                                    Batch Normalization
-                                            |
-                                        Conv_layer
-                                            |
-                                    Up sampling layer
+                    
 The Up-sampling path consists of 4 Up sampling blocks and we encourange you to look at our model plot for more information.
 
 5.3. Proposed MultiRes Path: The inspiration to this is architecture is derived from this paper:https://arxiv.org/pdf/1902.04049.pdf. However, The skip connections that we have defined is different interms of its architecture.
