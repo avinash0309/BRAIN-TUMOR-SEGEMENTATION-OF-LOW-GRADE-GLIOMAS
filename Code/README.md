@@ -11,7 +11,8 @@
 5.1. The Ipyhton notebook "Proposed_unet_train.ipnynb" explains the training of Proposed Unet model.
 Proposed a U-net model that gives a Better result compared to the Normal Unet and MultiRes Unet model.
 Our proposed model consists of a Dowsampling Path, Proposed Multires Upath and an Upsampling Path.
-Down Sampling Block: The architecture of the Downsampling block has been shown below
+
+5.1.a Down Sampling Block: The architecture of the Downsampling block has been shown below
                                         Conv_layer
                                             |
                                     Batch Normalization
@@ -19,6 +20,7 @@ Down Sampling Block: The architecture of the Downsampling block has been shown b
                                         Conv_layer
                                             |
                                      Max pooling layer
+                                     
 5.2. The Downsampling path consists of 4 Downsampling blocks and we encourange you to look at our model plot for more information.
 Up Sampling Block:The architecture of the Upsampling block has been shown below
                       Skip connection + Input from previous Conv_layer
