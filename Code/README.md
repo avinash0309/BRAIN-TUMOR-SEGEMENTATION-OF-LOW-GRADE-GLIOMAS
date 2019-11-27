@@ -14,7 +14,7 @@ Our proposed model consists of a Dowsampling Path, Proposed Multires Upath and a
 
  Down Sampling Block: The architecture of the Downsampling block consists of:
  
- *. Conv_layer-->Batch Normalization--> Conv_layer-- Max pooling layer
+  Conv_layer-->Batch Normalization--> Conv_layer-- Max pooling layer
 
                                       
                                      
