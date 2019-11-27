@@ -19,7 +19,8 @@ Our proposed model consists of a Dowsampling Path, Proposed Multires Upath and a
                                       
                                      
 5.2. The Downsampling path consists of 4 Downsampling blocks and we encourange you to look at our model plot for more information.
-Up Sampling Block:The architecture of the Upsampling block has been shown below
+Up Sampling Block:The architecture of the Upsampling block consists of:
+Skip connection + Input from previous Conv_layer-->Batch Normalization-->Conv_layer-->Batch Normalization-->Conv_layer-->Up sampling layer
                     
 The Up-sampling path consists of 4 Up sampling blocks and we encourange you to look at our model plot for more information.
 
