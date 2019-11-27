@@ -8,7 +8,7 @@
 
 4. The Ipyhton notebook "multires_Unet_Train.ipnynb" explains the training of MultiRes-Unet model.
 
-5. The Ipyhton notebook "Proposed_unet_train.ipnynb" explains the training of Proposed Unet model.
+5.1. The Ipyhton notebook "Proposed_unet_train.ipnynb" explains the training of Proposed Unet model.
 Proposed a U-net model that gives a Better result compared to the Normal Unet and MultiRes Unet model.
 Our proposed model consists of a Dowsampling Path, Proposed Multires Upath and an Upsampling Path.
 Down Sampling Block: The architecture of the Downsampling block has been shown below
@@ -19,7 +19,7 @@ Down Sampling Block: The architecture of the Downsampling block has been shown b
                                         Conv_layer
                                             |
                                      Max pooling layer
-The Downsampling path consists of 4 Downsampling blocks and we encourange you to look at our model plot for more information.
+5.2. The Downsampling path consists of 4 Downsampling blocks and we encourange you to look at our model plot for more information.
 Up Sampling Block:The architecture of the Upsampling block has been shown below
                       Skip connection + Input from previous Conv_layer
                                             |
@@ -34,19 +34,21 @@ Up Sampling Block:The architecture of the Upsampling block has been shown below
                                     Up sampling layer
 The Up-sampling path consists of 4 Up sampling blocks and we encourange you to look at our model plot for more information.
 
-Proposed MultiRes Path: The inspiration to this is architecture is derived from this paper:https://arxiv.org/pdf/1902.04049.pdf. However, The skip connections that we have defined is different interms of its architecture.
-In Their paper,the authors have used Respaths that connects the Encoder and Decoder in the following manner:
+5.3. Proposed MultiRes Path: The inspiration to this is architecture is derived from this paper:https://arxiv.org/pdf/1902.04049.pdf. However, The skip connections that we have defined is different interms of its architecture.
+
+5.4. In Their paper,the authors have used Respaths that connects the Encoder and Decoder in the following manner:
 The first Respath contains 4 conv_layers with 32 filters each
 The Second Respath contains 3 conv_layers with 64 filters each
 The Third Respath contains 2 conv_layers with 128 filters each
 The fourth Respath contains 1 conv_layers with 256 filters each
-In the model that we have proposed, we have used the Respaths in the following manner:
+
+5.5. In the model that we have proposed, we have used the Respaths in the following manner:
 The first Respath contains 1 conv_layers with 32 filters each
 The Second Respath contains 2 conv_layers with 64 filters each
 The Third Respath contains 3 conv_layers with 128 filters each
 The fourth Respath contains 4 conv_layers with 256 filters each
 
-Explanation for the choosen architecture: 
+5.6. Explanation for the choosen architecture: 
 The convolution neural networks only learns low level features such as lines, edges and corners in the earlier layers.Furthermore, as the networks grows in depth, the convolution neural networks can capture more and a finer context present in an image.Hence, we felt using more number of conv_layers in the first Respath was not a good idea and we have only used 1 conv_layer in the first Respath,2 conv_layer in the second Respath,3 conv_layer in the third Respath and 4 conv_layers in the 4th Respath that contains more context of the image.Also, this model architecture resulted in a imporved performance and we achieved a highest validation Dice score of 0.8702
 
 # TRAINED MODELS
