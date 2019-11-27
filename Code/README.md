@@ -17,7 +17,7 @@ These trained models can be used for can be used for generating the segmentation
 # COMPARING THE PERFORMANCE OF THE MODELS
 1. The Ipython notebook "TestimagesegmentationModels.ipynb" can be used to visualize the Train and Validation - Mertics,Losses.
 
-2. It aslo provides a comparison bwteen the with ground truth and segmentation maps given the three models
+2. It aslo provides a comparison bewteen the with ground truth and segmentation maps given the three models
 
 
 
