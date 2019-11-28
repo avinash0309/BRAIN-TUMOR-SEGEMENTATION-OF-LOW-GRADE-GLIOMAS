@@ -28,19 +28,18 @@ The Up-sampling path consists of 4 Up sampling blocks and we encourange you to l
 5.3. Proposed MultiRes Path: The inspiration to this is architecture is derived from this paper:https://arxiv.org/pdf/1902.04049.pdf. However, The skip connections that we have defined is different interms of its architecture.
 
 5.4. In Their paper,the authors have used Respaths that connects the Encoder and Decoder in the following manner:
-The first Respath contains 4 conv_layers with 32 filters each
-The Second Respath contains 3 conv_layers with 64 filters each
-The Third Respath contains 2 conv_layers with 128 filters each
-The fourth Respath contains 1 conv_layers with 256 filters each
+*The first Respath has length 4 with 32 filters each
+*The Second Respath has length 3 with 64 filters each
+*The Third Respath has length 2 with 128 filters each
+*The fourth Respath has length 1 with 256 filters each
 
-5.5. In the model that we have proposed, we have used the Respaths in the following manner:
-The first Respath contains 1 conv_layers with 32 filters each
-The Second Respath contains 2 conv_layers with 64 filters each
-The Third Respath contains 3 conv_layers with 128 filters each
-The fourth Respath contains 4 conv_layers with 256 filters each
+In the model that we have proposed, we have used the Respath in the following manner:
+*The first Respath has length 1 with 32 filters each
+*The Second Respath has length 2 with 64 filters each
+*The Third Respath has length 3 with 128 filters each
+*The fourth Respath has length 4 with 256 filters each
 
-5.6. Explanation for the choosen architecture: 
-The convolution neural networks only learns low level features such as lines, edges and corners in the earlier layers.Furthermore, as the networks grows in depth, the convolution neural networks can capture more and a finer context present in an image.Hence, we felt using more number of conv_layers in the first Respath was not a good idea and we have only used 1 conv_layer in the first Respath,2 conv_layer in the second Respath,3 conv_layer in the third Respath and 4 conv_layers in the 4th Respath that contains more context of the image.Also, this model architecture resulted in a imporved performance and we achieved a highest validation Dice score of 0.8702
+Explanation for the choosen architecture: The convolution neural networks only learns low level features such as lines, edges and corners in the earlier layers.Furthermore, as the networks grows in depth, the convolution neural networks can capture more and a finer context present in an image.Hence, we felt using more number of conv_layers in the first Respath was not a good idea and we have only used length 1 in the first Respath,length 2 conv_layer in the second Respath,length 3 conv_layer in the third Respath and length 4 in the fourth Respath that contains more context of the image.Also, this model architecture resulted in a imporved performance and we achieved a highest validation Dice score of 0.8702
 
 # TRAINED MODELS
 All the three trained models with weights can be accessed using the following link https://buffalo.app.box.com/v/BrainTumorDependentFiles/folder/94778410225 
@@ -50,10 +49,3 @@ These trained models can be used for can be used for generating the segmentation
 1. The Ipython notebook "TestimagesegmentationModels.ipynb" can be used to visualize the Train and Validation - Mertics,Losses.
 
 2. It aslo provides a comparison bewteen the with ground truth and segmentation maps given the three models
-
-
-
-
-
-
-
