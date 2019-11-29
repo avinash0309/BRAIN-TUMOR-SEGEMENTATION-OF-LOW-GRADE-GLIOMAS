@@ -8,26 +8,21 @@
 
 4. The Ipyhton notebook "multires_Unet_Train.ipnynb" explains the training of MultiRes-Unet model.
 
-5.1. The Ipyhton notebook "Proposed_unet_train.ipnynb" explains the training of Proposed Unet model.
+5. The Ipyhton notebook "Proposed_unet_train.ipnynb" explains the training of Proposed Unet model.
 We Propose a U-net model that gives a Better result compared to the Normal Unet and MultiRes Unet model.
 Our proposed model consists of a Dowsampling Path, Proposed Multires Upath and an Upsampling Path.
 
- Down Sampling Block: The architecture of the Downsampling block consists of:
+5.1 Down Sampling Block Architecture: Its consists of 4 Downsampling blocks
  
  *  Conv_layer---->Batch Normalization----> Conv_layer----> Max pooling layer
+                                    
+5.2 Up Sampling Block Architecture: Its consists of 4 Upsampling blocks
 
-                                      
-                                     
-5.2. The Downsampling path consists of 4 Downsampling blocks and we encourange you to look at our model plot for more information.
-Up Sampling Block:The architecture of the Upsampling block consists of:
+ *  Skip_connection + Input from previous Conv_layer->Batch Normalization->Conv_layer->Batch Normalization->Conv_layer->Up sampling layer
 
-* Skip_connection + Input from previous Conv_layer->Batch Normalization->Conv_layer->Batch Normalization->Conv_layer->Up sampling layer
-                    
-The Up-sampling path consists of 4 Up sampling blocks and we encourange you to look at our model plot for more information.
+5.3 Proposed MultiRes Path: The inspiration to this is architecture is derived from this paper:https://arxiv.org/pdf/1902.04049.pdf. However, the skip connections that we have defined is different interms of its architecture.
 
-5.3. Proposed MultiRes Path: The inspiration to this is architecture is derived from this paper:https://arxiv.org/pdf/1902.04049.pdf. However, The skip connections that we have defined is different interms of its architecture.
-
-5.4. In Their paper,the authors have used Respaths that connects the Encoder and Decoder in the following manner:
+In The paper,the authors have used Respaths that connects the Encoder and Decoder in the following manner:
 1. The first Respath has length 4 with 32 filters each
 2. The Second Respath has length 3 with 64 filters each
 3. The Third Respath has length 2 with 128 filters each
