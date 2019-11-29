@@ -12,15 +12,15 @@
 We Propose a U-net model that gives a Better result compared to the Normal Unet and MultiRes Unet model.
 Our proposed model consists of a Dowsampling Path, Proposed Multires Upath and an Upsampling Path.
 
-5.1 Down Sampling Block Architecture: Its consists of 4 Downsampling blocks
+5.1. Down Sampling Block Architecture: Its consists of 4 Downsampling blocks
  
  *  Conv_layer---->Batch Normalization----> Conv_layer----> Max pooling layer
                                     
-5.2 Up Sampling Block Architecture: Its consists of 4 Upsampling blocks
+5.2. Up Sampling Block Architecture: Its consists of 4 Upsampling blocks
 
  *  Skip_connection + Input from previous Conv_layer->Batch Normalization->Conv_layer->Batch Normalization->Conv_layer->Up sampling layer
 
-5.3 Proposed MultiRes Path: The inspiration to this is architecture is derived from this paper:https://arxiv.org/pdf/1902.04049.pdf. However, the skip connections that we have defined is different interms of its architecture.
+5.3. Proposed MultiRes Path: The inspiration to this is architecture is derived from this paper:https://arxiv.org/pdf/1902.04049.pdf. However, the skip connections that we have defined is different interms of its architecture.
 
 In The paper,the authors have used Respaths that connects the Encoder and Decoder in the following manner:
 1. The first Respath has length 4 with 32 filters each
@@ -28,7 +28,7 @@ In The paper,the authors have used Respaths that connects the Encoder and Decode
 3. The Third Respath has length 2 with 128 filters each
 4. The fourth Respath has length 1 with 256 filters each
 
-In the model that we have proposed, we have used the Respath in the following manner:
+In the model that we have proposed, the Respath in the following manner:
 1. The first Respath has length 1 with 32 filters each
 2. The Second Respath has length 2 with 64 filters each
 3. The Third Respath has length 3 with 128 filters each
