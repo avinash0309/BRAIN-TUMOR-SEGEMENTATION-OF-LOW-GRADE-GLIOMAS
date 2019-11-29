@@ -38,7 +38,7 @@ Explanation for the choosen architecture: The convolution neural networks only l
 
 # TRAINED MODELS
 All the three trained models with weights can be accessed using the following link https://buffalo.app.box.com/v/BrainTumorDependentFiles/folder/94778410225 
-These trained models can be used for can be used for generating the segmentation maps for a given image.
+These trained models can be used for generating the segmentation maps for a given image.
 
 # COMPARING THE PERFORMANCE OF THE MODELS
 1. The Ipython notebook "TestimagesegmentationModels.ipynb" can be used to visualize the Train and Validation - Mertics,Losses.
