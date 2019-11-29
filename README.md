@@ -3,7 +3,7 @@
 Created by:
 [Naveen Balaraju](https://github.com/naveenbalaraju?tab=repositories) and [Avinash Kammardi Sashiprakash](https://github.com/avinash0309?tab=repositories)
 
-1. The objective of this project is to develope and automatic Image segmentaion algorithm to detect the low grade brain turmors. 
+1. The objective of this project is to develop and automatic Image segmentaion algorithm to detect the low grade brain tumors. 
 2. Recent studies have discovered that low grade gliomas are associated with the genomic subtypes that have a particular feature shape and by analyzing the feature shape we can predict which genomic subtype that was responsible for the development of the brain tumor. 
 3. The conventional way to findout the genomic subtype is by making a biopsy which involves making and incision into the skull and collecting the tissue from the tumor site which involves a huge amount of risk factors.For more details we encougare you to read the referenced paper below.
 
